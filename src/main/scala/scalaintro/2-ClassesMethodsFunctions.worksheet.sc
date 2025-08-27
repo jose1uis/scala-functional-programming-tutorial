@@ -187,7 +187,7 @@ val data1 = debug1("data")
 def debug2(data: Any) =
   println(s"Debug: ${data}")
   data
-val data2 = debug2("data")
+val data2 = debug2("data") // : Any = Data
 // But now data2 lost its type and we can't call String methods like 'size' on it.
 // The solution is to use a type parameter to make the method generic
 // and let the compiler properly infer and preserve the type information.
